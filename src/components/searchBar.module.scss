@@ -1,0 +1,39 @@
+.search {
+  width: 60vw;
+  max-width: 915px;
+  height: 83px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  position: relative;
+  .searchTerm {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0rem 1.4rem;
+
+    font-size: 2rem;
+    color: #00000066;
+    &::placeholder {
+      color: #00000066;
+    }
+  }
+  .searchButtonImg {
+    width: 2rem;
+  }
+  .searchButton {
+    position: absolute;
+    right: 1rem;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ffffff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

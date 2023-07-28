@@ -1,0 +1,32 @@
+$assetsPath: "../assets";
+
+@mixin bg-image($image-width, $image-height) {
+  background-size: cover;
+  height: 100vh;
+  display: block;
+  position: relative;
+  background-position: center center;
+  filter: contrast(90%);
+  background-color: #d7e0ff42;
+  background-blend-mode: screen;
+}
+
+.mainBg {
+  background-image: url(#{$assetsPath}/bg-img.jpg);
+  @include bg-image(100vw, 100vh);
+}
+
+.flexPosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 15vh;
+}
+.logo {
+  position: absolute;
+  width: 4rem;
+  right: 40px;
+  top: 40px;
+}
