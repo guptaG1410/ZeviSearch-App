@@ -3,7 +3,7 @@ import SearchBar from "../components/SearchBar";
 import HomeStyles from "./home.module.scss";
 import styles from "./searchResults.module.scss";
 import logo from "../assets/zeviLogo.png";
-// import FakerDemo from "../components/faker-demo";
+import ProductCard from "../components/ProductCard";
 
 const SearchResults = () => {
   return (
@@ -12,7 +12,7 @@ const SearchResults = () => {
         <SearchBar className={`${styles.searchBorder}`} />
       </div>
       <img className={`${HomeStyles.logo}`} src={logo} alt="logo" />
-      {/* <FakerDemo /> */}
+      <ProductCard />
     </div>
   );
 };

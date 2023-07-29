@@ -15,7 +15,7 @@ const Home = () => {
         onClick={() => setIsTrends(!isTrends)}
       >
         <SearchBar />
-        {isTrends && <LatestTrends />}
+        {isTrends && <LatestTrends setIsTrends={setIsTrends}/>}
       </div>
     </div>
   );

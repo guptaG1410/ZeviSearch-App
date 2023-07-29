@@ -1,0 +1,82 @@
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mainCard {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    min-width: 190px;
+    row-gap: 2px;
+  }
+  
+  .pImage {
+    width: 100%;
+    position: relative;
+  }
+  .pImage img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    max-width: 300px;
+  }
+  
+  .pPrice {
+    display: flex;
+  }
+  
+  .pOriginal {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .pSelling {
+    color: #6d84ff;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .pName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .allCards > div {
+    width: 20%;
+  }
+  
+  .pRating {
+    display: flex;
+    column-gap: 5px;
+    font-size: 13px;
+    align-items: center;
+    width: fit-content;
+    padding: 1px;
+    color: gray;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .absHeart {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+  }
+  .absHeart i {
+    color: #6d84ff;
+    width: 20px;
+  }
