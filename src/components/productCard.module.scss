@@ -1,82 +1,84 @@
-.allCards {
+.drawer {
+  box-sizing: border-box;
+  position: relative;
+  margin: 10rem auto;
+  padding: 2rem 2rem;
+  width: 90vw;
+  max-width: 2000px;
+
+  background: #ffffff;
+  // box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow-y: scroll;
+  color: #000000;
+  animation: fadeIn 0.5s;
+
+  .trendFlex {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* row-gap: 20px;
-    column-gap: 20px; */
     align-items: center;
     justify-content: center;
+    gap: 1.8rem;
+
+    .trend {
+      display: flex;
+      flex-direction: column;
+      .trendA {
+        width: 239px;
+        height: 325px;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        background: transparent;
+        transition: 0.2s;
+        &:hover {
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+        }
+        img {
+          width: 239px;
+          height: 325px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+        .viewButton {
+          box-sizing: border-box;
+          position: absolute;
+          text-align: center;
+          bottom: 0;
+          right: 0;
+          background: rgba(109, 132, 255, 0.71);
+          color: white;
+          font-size: 1.1rem;
+          width: 100%;
+          font-weight: 500;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: visibility 0s, opacity 0.2s linear;
+          transition: visibility 0s, opacity 0.2s linear;
+        }
+        &:hover .viewButton {
+          padding: 8px 15px;
+          overflow-x: hidden;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .trendB {
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .price {
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 24px;
+        color: #6d84ff;
+      }
+    }
   }
-  
-  .mainCard {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    min-width: 190px;
-    row-gap: 2px;
-  }
-  
-  .pImage {
-    width: 100%;
-    position: relative;
-  }
-  .pImage img {
-    width: 100%;
-    height: auto;
-    max-height: 350px;
-    max-width: 300px;
-  }
-  
-  .pPrice {
-    display: flex;
-  }
-  
-  .pOriginal {
-    text-decoration: line-through;
-    font-size: 14px;
-    color: gray;
-  }
-  
-  .pSelling {
-    color: #6d84ff;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  
-  .pName {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  
-  .allCards > div {
-    width: 20%;
-  }
-  
-  .pRating {
-    display: flex;
-    column-gap: 5px;
-    font-size: 13px;
-    align-items: center;
-    width: fit-content;
-    padding: 1px;
-    color: gray;
-  }
-  
-  .rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-  }
-  .absHeart {
-    position: absolute;
-    right: 12px;
-    top: 8px;
-  }
-  .absHeart i {
-    color: #6d84ff;
-    width: 20px;
-  }
+}

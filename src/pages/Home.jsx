@@ -14,7 +14,7 @@ const Home = () => {
         className={`${styles.flexPosition}`}
         onClick={() => setIsTrends(!isTrends)}
       >
-        <SearchBar />
+        <SearchBar setIsTrends={setIsTrends}/>
         {isTrends && <LatestTrends setIsTrends={setIsTrends}/>}
       </div>
     </div>
